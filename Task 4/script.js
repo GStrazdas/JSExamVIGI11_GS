@@ -39,10 +39,13 @@ function showResult(data, logo) {
             brandEl.textContent = brand.brand;
             card.append(brandEl);
         }
+        const list = document.createElement("ul");
+        list.style.listStyleType = "none";
+        card.append(list);
         brand.models.forEach(model => {
-            const modelEl = document.createElement("p");
+            const modelEl = document.createElement("li");
             modelEl.textContent = model;
-            card.append(modelEl);
+            list.append(modelEl);
         });
     });
 }
