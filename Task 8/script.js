@@ -7,18 +7,10 @@ division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
 function Calculator() {
-    this.sum = function(number1, number2) {
-        return number1 + number2;
-    }
-    this.subtraction = function(number1, number2) {
-        return number1 - number2;
-    }
-    this.multiplication = function(number1, number2) {
-        return number1 * number2;
-    }
-    this.division = function(number1, number2) {
-        return number1 / number2;
-    }
+    this.sum = (number1, number2) => number1 + number2;
+    this.subtraction = (number1, number2) => number1 - number2;
+    this.multiplication = (number1, number2) => number1 * number2;
+    this.division = (number1, number2) => number1 / number2;
 }
 
 const calculator1 = new Calculator();
